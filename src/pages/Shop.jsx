@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset.js'
 import { Link } from 'react-router-dom'
 import { products } from '../lib/products.js'
 import { Reveal, RevealLines } from '../components/Reveal.jsx'
@@ -65,7 +66,7 @@ export default function Shop() {
           </div>
           <Parallax amount={50}>
             <div className="split-media tall">
-              <img src="/images/yarn-honey.jpg" alt="Garn in verschiedenen Farben" />
+              <img src={asset('/images/yarn-honey.jpg')} alt="Garn in verschiedenen Farben" />
             </div>
           </Parallax>
         </div>

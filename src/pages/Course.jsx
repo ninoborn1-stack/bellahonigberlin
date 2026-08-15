@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset.js'
 import { useMemo, useState } from 'react'
 import { courseDates } from '../lib/products.js'
 import { Reveal, RevealLines } from '../components/Reveal.jsx'
@@ -51,7 +52,7 @@ export default function Course() {
       {/* hero */}
       <section className="pageband wrap">
         <div className="course-hero" style={{ minHeight: 420 }}>
-          <ParallaxImage src="/images/course-3.jpg" alt="Häkeln im Kurs" amount={70} />
+          <ParallaxImage src={asset('/images/course-3.jpg')} alt="Häkeln im Kurs" amount={70} />
           <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(120deg, rgba(22,35,47,0.86), rgba(22,35,47,0.35))', zIndex: 1 }} />
           <div style={{ position: 'relative', zIndex: 2 }}>
             <Reveal immediate><div className="eyebrow honey" style={{ color: 'var(--honey-glow)' }}>Häkelkurs · alle 2 Wochen</div></Reveal>

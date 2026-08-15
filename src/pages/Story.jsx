@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset.js'
 import { Link } from 'react-router-dom'
 import { Reveal, RevealLines } from '../components/Reveal.jsx'
 import Parallax, { ParallaxImage } from '../components/Parallax.jsx'
@@ -27,7 +28,7 @@ export default function Story() {
       <section className="wrap" style={{ marginTop: 40 }}>
         <Reveal>
           <div style={{ position: 'relative', height: '62vh', minHeight: 380, borderRadius: 'var(--radius)', overflow: 'hidden' }}>
-            <ParallaxImage src="/images/berlin2.jpg" alt="Berlin von oben" amount={80} />
+            <ParallaxImage src={asset('/images/berlin2.jpg')} alt="Berlin von oben" amount={80} />
           </div>
         </Reveal>
       </section>
@@ -57,7 +58,7 @@ export default function Story() {
           </div>
           <Parallax amount={50}>
             <div className="split-media tall">
-              <img src="/images/yarn.jpg" alt="Garnknäuel und Häkelnadeln" />
+              <img src={asset('/images/yarn.jpg')} alt="Garnknäuel und Häkelnadeln" />
             </div>
           </Parallax>
         </div>

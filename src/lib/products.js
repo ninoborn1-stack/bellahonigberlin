@@ -1,4 +1,6 @@
 // Product catalogue — currently one handmade bag design in two colourways.
+import { asset } from './asset.js'
+
 export const products = [
   {
     slug: 'milly',
@@ -13,7 +15,7 @@ export const products = [
       'Weich gehäkelte Hobo-Tasche in warmem Honigbeige — leicht wie ein Sommertag, gemacht für Markt, Strand und Boulevard.',
     story:
       'Milly ist unsere hellste Seele. In vielen Stunden aus einem weichen, recycelten Baumwollgarn gehäkelt, schwingt sie in einer runden Hobo-Form, die sich weich an die Schulter legt und viel fasst. Ihr warmer Beigeton schimmert wie Honig im Morgenlicht. Jede Masche wird in unserem Atelier in Berlin-Neukölln von Hand gesetzt.',
-    images: ['/images/milly-std.png', '/images/milly-2.jpg', '/images/milly-hang.png'],
+    images: ['/images/milly-std.png', '/images/milly-2.jpg', '/images/milly-hang.png'].map(asset),
     details: [
       ['Material', '100 % recycelte Baumwolle, naturbeige & honigwarm'],
       ['Form', 'Runde Hobo-Tasche mit geflochtenem Schulterhenkel'],
@@ -35,7 +37,7 @@ export const products = [
       'Ruhig, erdig, urban — Otto trägt ein tief olivgrünes Garn und einen satten Stich für alles, was der Tag so mitbringt.',
     story:
       'Otto ist Millys Gegenstück für die dunkleren Stunden. Ein satter, fester Stich und ein tiefes Olivgrün machen ihn zum verlässlichen Begleiter durch Berlin — von der Morgenschicht im Café bis zur letzten U-Bahn. Dieselbe weiche Hobo-Form, genauso von Hand gehäkelt, genauso ein Unikat.',
-    images: ['/images/otto-std.png', '/images/otto-2.jpg', '/images/otto-hang.png'],
+    images: ['/images/otto-std.png', '/images/otto-2.jpg', '/images/otto-hang.png'].map(asset),
     details: [
       ['Material', '100 % recycelte Baumwolle, tief olivgrün gefärbt'],
       ['Form', 'Runde Hobo-Tasche mit geflochtenem Schulterhenkel'],

@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset.js'
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { motion, useScroll, useTransform } from 'framer-motion'
@@ -24,13 +25,13 @@ function Hero() {
 
       <div className="hero-photos">
         <motion.div className="hero-photo p1" style={{ y: y1 }}>
-          <img src="/images/otto-portrait.png" alt="Otto — handgehäkelte Tasche in Olivgrün" />
+          <img src={asset('/images/otto-portrait.png')} alt="Otto — handgehäkelte Tasche in Olivgrün" />
         </motion.div>
         <motion.div className="hero-photo p2" style={{ y: y2 }}>
-          <img src="/images/milly-std.png" alt="Milly — handgehäkelte Tasche in Honigbeige" />
+          <img src={asset('/images/milly-std.png')} alt="Milly — handgehäkelte Tasche in Honigbeige" />
         </motion.div>
         <motion.div className="hero-photo p3" style={{ y: y3 }}>
-          <img src="/images/milly-hang.png" alt="Milly — handgehäkelte Tasche in Honigbeige" />
+          <img src={asset('/images/milly-hang.png')} alt="Milly — handgehäkelte Tasche in Honigbeige" />
         </motion.div>
       </div>
 
@@ -66,7 +67,7 @@ function Hero() {
           </div>
 
           <div className="hero-mobile-photo">
-            <img src="/images/milly-2.jpg" alt="Handgehäkelte Tasche von BellaHonigBerlin" />
+            <img src={asset('/images/milly-2.jpg')} alt="Handgehäkelte Tasche von BellaHonigBerlin" />
           </div>
         </motion.div>
       </div>
@@ -115,7 +116,7 @@ export default function Home() {
           </div>
           <Parallax amount={50}>
             <div className="split-media tall">
-              <img src="/images/otto-flat.jpg" alt="Detail einer handgehäkelten Tasche" />
+              <img src={asset('/images/otto-flat.jpg')} alt="Detail einer handgehäkelten Tasche" />
             </div>
           </Parallax>
         </div>
@@ -146,7 +147,7 @@ export default function Home() {
 
       {/* Full-bleed honey banner */}
       <section style={{ position: 'relative', height: '78vh', minHeight: 480, overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
-        <ParallaxImage src="/images/honeycomb2.jpg" alt="Honigwabe" amount={90} />
+        <ParallaxImage src={asset('/images/honeycomb2.jpg')} alt="Honigwabe" amount={90} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(22,35,47,0.72), rgba(22,35,47,0.25))' }} />
         <div className="wrap" style={{ position: 'relative', color: 'var(--paper)' }}>
           <Reveal><div className="eyebrow honey" style={{ color: 'var(--honey-glow)' }}>Warum Honig?</div></Reveal>
@@ -190,7 +191,7 @@ export default function Home() {
       <section className="section-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="course-hero">
-            <div className="bgimg"><img src="/images/course-1.jpg" alt="Häkelkurs" /></div>
+            <div className="bgimg"><img src={asset('/images/course-1.jpg')} alt="Häkelkurs" /></div>
             <Reveal><div className="eyebrow honey" style={{ color: 'var(--honey-glow)' }}>Häkelkurs</div></Reveal>
             <RevealLines tag="h2" className="h-xl" lines={['Lern es selbst —', 'alle zwei Wochen.']} />
             <Reveal delay={0.12}>
@@ -213,7 +214,7 @@ export default function Home() {
         <div className="wrap split reverse">
           <Parallax amount={50}>
             <div className="split-media tall">
-              <img src="/images/berlin.jpg" alt="Berlin" />
+              <img src={asset('/images/berlin.jpg')} alt="Berlin" />
             </div>
           </Parallax>
           <div>

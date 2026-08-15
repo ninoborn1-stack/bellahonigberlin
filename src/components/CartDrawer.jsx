@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset.js'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { useCart } from '../context/CartContext.jsx'
@@ -34,7 +35,7 @@ export default function CartDrawer() {
 
             {lines.length === 0 ? (
               <div className="cart-empty">
-                <img className="mark" src="/brand/mark.png" alt="" />
+                <img className="mark" src={asset('/brand/mark.png')} alt="" />
                 <p>Noch ganz leicht — hier wartet noch keine Tasche.</p>
                 <Link className="btn btn-magenta btn-fill" to="/shop" onClick={() => setOpen(false)} style={{ marginTop: 12 }}>
                   Zum Shop

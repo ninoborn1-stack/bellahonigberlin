@@ -1,3 +1,4 @@
+import { asset } from '../lib/asset.js'
 import { useEffect, useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -30,7 +31,7 @@ export default function Nav() {
     <>
       <nav className={`nav ${scrolled ? 'scrolled' : ''} ${menu ? 'menu-open' : ''}`}>
         <Link to="/" className="nav-brand" onClick={() => setMenu(false)}>
-          <img className="mark" src="/brand/mark.png" alt="" />
+          <img className="mark" src={asset('/brand/mark.png')} alt="" />
           <b>
             Bella<span>Honig</span>Berlin
           </b>
