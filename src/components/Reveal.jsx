@@ -33,7 +33,17 @@ export function RevealLines({ lines, className, tag: Tag = 'h2', immediate = fal
   return (
     <MTag ref={ref} className={className}>
       {lines.map((line, i) => (
-        <span key={i} style={{ display: 'block', overflow: 'hidden', paddingBottom: '0.08em' }}>
+        <span
+          key={i}
+          style={{
+            display: 'block',
+            overflow: 'hidden',
+            // Roomy padding so descenders (g, j, comma) aren't clipped by the
+            // reveal mask; negative margin keeps the visual line spacing tight.
+            paddingBottom: '0.3em',
+            marginBottom: '-0.22em',
+          }}
+        >
           <motion.span
             style={{ display: 'inline-block' }}
             initial={{ y: '110%' }}
