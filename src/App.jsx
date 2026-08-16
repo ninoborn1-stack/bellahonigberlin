@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import Nav from './components/Nav.jsx'
 import Footer from './components/Footer.jsx'
 import CartDrawer from './components/CartDrawer.jsx'
-import { ScrollProgress, Cursor, Grain } from './components/Chrome.jsx'
+import { ScrollProgress, Grain } from './components/Chrome.jsx'
 import { useLenis, lenis } from './lib/useLenis.js'
 
 import Home from './pages/Home.jsx'
@@ -28,7 +28,6 @@ export default function App() {
     <>
       <Grain />
       <ScrollProgress />
-      <Cursor />
       <Nav />
       <CartDrawer />
       <ScrollToTop />

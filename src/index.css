@@ -192,29 +192,6 @@ section { position: relative; }
   z-index: 200;
   transform-origin: 0 50%;
 }
-.cursor-dot {
-  position: fixed; top: 0; left: 0;
-  width: 9px; height: 9px; border-radius: 50%;
-  background: var(--magenta);
-  pointer-events: none; z-index: 9998;
-  transform: translate(-50%, -50%);
-  mix-blend-mode: normal;
-  transition: width 0.25s var(--ease), height 0.25s var(--ease), background 0.25s;
-}
-.cursor-ring {
-  position: fixed; top: 0; left: 0;
-  width: 42px; height: 42px; border-radius: 50%;
-  border: 1.5px solid var(--ink);
-  pointer-events: none; z-index: 9997;
-  transform: translate(-50%, -50%);
-  opacity: 0.5;
-  transition: width 0.3s var(--ease), height 0.3s var(--ease), opacity 0.3s;
-}
-body.cur-hover .cursor-dot { width: 0; height: 0; }
-body.cur-hover .cursor-ring { width: 64px; height: 64px; opacity: 1; border-color: var(--magenta); }
-@media (hover: none), (max-width: 900px) {
-  .cursor-dot, .cursor-ring { display: none; }
-}
 
 /* ---------- honeycomb decorative ---------- */
 .honeycomb-bg {
