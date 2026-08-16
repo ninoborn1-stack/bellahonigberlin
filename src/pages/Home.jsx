@@ -44,7 +44,7 @@ function Hero() {
             immediate
             tag="h1"
             className="display"
-            lines={['Von Hand,', <>mit <span className="hero-accent-word">Liebe</span></>, 'gehäkelt']}
+            lines={[<>Von <span className="hero-honey-word">Hand</span>,</>, <>mit <span className="hero-accent-word">Liebe</span></>, 'gehäkelt']}
           />
           <div className="hero-sub">
             <Reveal delay={0.2} immediate>
