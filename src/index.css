@@ -334,6 +334,7 @@ body.cur-hover .cursor-ring { width: 64px; height: 64px; opacity: 1; border-colo
   font-style: italic; color: var(--magenta);
 }
 .hero-honey-word { color: var(--honey); font-style: italic; }
+.hero-accent-word { color: var(--magenta); font-style: italic; }
 .hero-sub {
   display: flex; flex-wrap: wrap; align-items: flex-end;
   gap: 30px; margin-top: 42px;
