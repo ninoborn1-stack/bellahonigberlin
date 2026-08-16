@@ -1,6 +1,6 @@
 /* ============================================================
    BellaHonigBerlin — design system
-   Fonts: Fraunces (editorial display serif) + Quicksand (brand sans)
+   Fonts: Lora (soft, calm display serif) + Quicksand (brand sans)
    Palette sampled from the brand logo.
    ============================================================ */
 
@@ -22,7 +22,7 @@
   --paper-2: #faf8f3;
   --line: #d7d3c9;
 
-  --serif: 'Fraunces', 'Times New Roman', serif;
+  --serif: 'Lora', 'Georgia', 'Times New Roman', serif;
   --sans: 'Quicksand', 'Segoe UI', system-ui, sans-serif;
 
   --wrap: 1280px;
@@ -64,13 +64,15 @@ button { font-family: inherit; cursor: pointer; }
 h1, h2, h3, h4 {
   font-family: var(--serif);
   font-weight: 400;
-  line-height: 1.02;
-  letter-spacing: -0.015em;
+  line-height: 1.08;
+  letter-spacing: -0.005em;
   margin: 0;
 }
 .display {
-  font-size: clamp(3.2rem, 11vw, 10rem);
-  line-height: 0.9;
+  font-size: clamp(3rem, 10vw, 9rem);
+  line-height: 1.0;
+  font-weight: 400;
+  letter-spacing: -0.01em;
 }
 .h-xl { font-size: clamp(2.4rem, 6vw, 5rem); }
 .h-lg { font-size: clamp(1.9rem, 4vw, 3.2rem); }
