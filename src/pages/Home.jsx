@@ -50,7 +50,7 @@ function Hero() {
             <Reveal delay={0.2} immediate>
               <p className="lead">
                 Drei Taschen, unzählige Maschen. <strong>Milly</strong>, <strong>Otto</strong> &amp;{' '}
-                <strong>Lucy</strong> entstehen Masche für Masche in unserem kleinen Atelier in Neukölln —
+                <strong>Lucy</strong> entstehen Masche für Masche in unserem kleinen Atelier in Zehlendorf —
                 jede ein Unikat.
               </p>
             </Reveal>
@@ -173,7 +173,7 @@ export default function Home() {
           <div className="pillars">
             {[
               ['01', 'Wirklich handgemacht', 'Keine Maschine, keine Massenware. Jede Tasche wird von Hand gehäkelt — in Stunden, nicht Sekunden.'],
-              ['02', 'Aus Berlin', 'Entworfen und gefertigt in Neukölln. Kurze Wege, faire Arbeit, echte Gesichter hinter jedem Stück.'],
+              ['02', 'Aus Berlin', 'Entworfen und gefertigt in Zehlendorf. Kurze Wege, faire Arbeit, echte Gesichter hinter jedem Stück.'],
               ['03', 'Für die Ewigkeit', 'Robuste, recycelte Baumwolle und Stiche, die halten. Eine Tasche zum Behalten und Weitergeben.'],
             ].map(([num, h, p], i) => (
               <Reveal key={num} delay={i * 0.08}>

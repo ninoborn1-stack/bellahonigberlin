@@ -48,8 +48,8 @@ export default function Footer() {
           <div>
             <h5>Atelier</h5>
             <ul>
-              <li>Weserstraße 00</li>
-              <li>12047 Berlin-Neukölln</li>
+              <li>Teltower Damm 00</li>
+              <li>14163 Berlin-Zehlendorf</li>
               <li><a href="mailto:hallo@bellahonigberlin.de">hallo@bellahonigberlin.de</a></li>
               <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram ↗</a></li>
             </ul>

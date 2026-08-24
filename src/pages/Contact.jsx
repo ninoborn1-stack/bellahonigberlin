@@ -69,7 +69,7 @@ export default function Contact() {
             <div style={{ display: 'grid', gap: 26 }}>
               <div>
                 <div className="eyebrow ink" style={{ marginBottom: 8 }}>Atelier</div>
-                <p style={{ margin: 0 }}>Weserstraße 00<br />12047 Berlin-Neukölln</p>
+                <p style={{ margin: 0 }}>Teltower Damm 00<br />14163 Berlin-Zehlendorf</p>
               </div>
               <div>
                 <div className="eyebrow ink" style={{ marginBottom: 8 }}>E-Mail</div>

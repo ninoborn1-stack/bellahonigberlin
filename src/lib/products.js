@@ -14,7 +14,7 @@ export const products = [
     short:
       'Weich gehäkelte Hobo-Tasche in warmem Honigbeige — leicht wie ein Sommertag, gemacht für Markt, Strand und Boulevard.',
     story:
-      'Milly ist unsere hellste Seele. In vielen Stunden aus einem weichen, recycelten Baumwollgarn gehäkelt, schwingt sie in einer runden Hobo-Form, die sich weich an die Schulter legt und viel fasst. Ihr warmer Beigeton schimmert wie Honig im Morgenlicht. Jede Masche wird in unserem Atelier in Berlin-Neukölln von Hand gesetzt.',
+      'Milly ist unsere hellste Seele. In vielen Stunden aus einem weichen, recycelten Baumwollgarn gehäkelt, schwingt sie in einer runden Hobo-Form, die sich weich an die Schulter legt und viel fasst. Ihr warmer Beigeton schimmert wie Honig im Morgenlicht. Jede Masche wird in unserem Atelier in Berlin-Zehlendorf von Hand gesetzt.',
     images: ['/images/milly-std.png', '/images/milly-2.jpg', '/images/milly-hang.png'].map(asset),
     details: [
       ['Material', '100 % recycelte Baumwolle, naturbeige & honigwarm'],
@@ -75,10 +75,10 @@ export const getProduct = (slug) => products.find((p) => p.slug === slug)
 
 // Häkelkurs — every two weeks, 10–50 spots depending on location.
 export const courseDates = [
-  { date: 'Sa · 30. Aug 2026', time: '11–15 Uhr', location: 'Atelier Neukölln', spots: 8, capacity: 12 },
+  { date: 'Sa · 30. Aug 2026', time: '11–15 Uhr', location: 'Atelier Zehlendorf', spots: 8, capacity: 12 },
   { date: 'Sa · 13. Sep 2026', time: '11–15 Uhr', location: 'Prenzlauer Berg', spots: 22, capacity: 30 },
   { date: 'Sa · 27. Sep 2026', time: '12–16 Uhr', location: 'Kreuzberg Werkraum', spots: 3, capacity: 16 },
-  { date: 'Sa · 11. Okt 2026', time: '11–15 Uhr', location: 'Atelier Neukölln', spots: 0, capacity: 12 },
+  { date: 'Sa · 11. Okt 2026', time: '11–15 Uhr', location: 'Atelier Zehlendorf', spots: 0, capacity: 12 },
   { date: 'Sa · 25. Okt 2026', time: '11–16 Uhr', location: 'Café Charlottenburg', spots: 40, capacity: 50 },
   { date: 'Sa · 08. Nov 2026', time: '11–15 Uhr', location: 'Prenzlauer Berg', spots: 18, capacity: 30 },
 ]

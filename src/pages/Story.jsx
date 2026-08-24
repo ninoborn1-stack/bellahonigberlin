@@ -17,7 +17,7 @@ export default function Story() {
         />
         <Reveal delay={0.15} immediate>
           <p className="lead" style={{ maxWidth: '52ch', marginTop: 20 }}>
-            BellaHonigBerlin entstand 2024 an einem Küchentisch in Neukölln — zwischen zwei Kaffeetassen,
+            BellaHonigBerlin entstand 2024 an einem Küchentisch in Zehlendorf — zwischen zwei Kaffeetassen,
             einem Korb voller Garnreste und der Frage: Warum trägt eigentlich niemand mehr etwas, in dem
             echte Stunden stecken?
           </p>
@@ -33,7 +33,7 @@ export default function Story() {
         </Reveal>
       </section>
 
-      <Marquee items={['Neukölln', 'Nadel & Garn', 'Kleine Serien', 'Große Sorgfalt', 'Seit 2024']} baseSpeed={26} />
+      <Marquee items={['Zehlendorf', 'Nadel & Garn', 'Kleine Serien', 'Große Sorgfalt', 'Seit 2024']} baseSpeed={26} />
 
       {/* narrative split */}
       <section className="section-pad">

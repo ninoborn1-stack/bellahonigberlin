@@ -72,7 +72,7 @@ export default function Course() {
         <div className="wrap">
           <div className="pillars">
             {[
-              ['①', 'Termin wählen', 'Alle zwei Wochen, samstags. Such dir Datum und Standort aus — von Neukölln bis Charlottenburg.'],
+              ['①', 'Termin wählen', 'Alle zwei Wochen, samstags. Such dir Datum und Standort aus — von Zehlendorf bis Charlottenburg.'],
               ['②', 'Platz anfragen', 'Sag uns, mit wie vielen du kommst. Wir bestätigen deinen Platz per Mail. Zahlung vor Ort.'],
               ['③', 'Loslegen', 'Ohne Vorkenntnisse. Am Ende gehst du mit deiner selbstgehäkelten Tasche und neuem Lieblingshobby.'],
             ].map(([n, h, p], i) => (
