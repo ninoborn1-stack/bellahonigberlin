@@ -434,8 +434,8 @@ section { position: relative; }
   border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/5; background: var(--bg-deep);
 }
 .pdp-gallery .main img { width: 100%; height: 100%; object-fit: cover; }
-.pdp-thumbs { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
-.pdp-thumbs button { border-radius: 12px; overflow: hidden; aspect-ratio: 1; border: 2px solid transparent; background: none; padding: 0; }
+.pdp-thumbs { display: flex; gap: 12px; }
+.pdp-thumbs button { flex: 1; border-radius: 12px; overflow: hidden; aspect-ratio: 1; border: 2px solid transparent; background: none; padding: 0; }
 .pdp-thumbs button.active { border-color: var(--honey); }
 .pdp-thumbs img { width: 100%; height: 100%; object-fit: cover; }
 .pdp-info { position: sticky; top: 110px; }

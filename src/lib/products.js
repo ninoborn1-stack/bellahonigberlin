@@ -59,7 +59,7 @@ export const products = [
       'Zart gehäkelte Hobo in Altrosé — mit einer Perlenbrosche in Gold als Herzstück. Verspielt, feminin, ein Liebling für Frühling und Sommer.',
     story:
       'Lucy ist die romantischste im Bunde. Aus weichem, altrosa Baumwollgarn in einer offenen Masche gehäkelt und veredelt mit einer handbesetzten Perlen-Brosche in Gold, die dem Beutel seinen Halt und seinen Charakter gibt. Klein, rund, verspielt — und wie alle unsere Taschen von Hand in Berlin gefertigt.',
-    images: ['/images/lucy-1.png', '/images/lucy-2.jpg', '/images/lucy-3.jpg'].map(asset),
+    images: ['/images/lucy-2.jpg', '/images/lucy-3.jpg'].map(asset),
     details: [
       ['Material', '100 % recycelte Baumwolle, altrosé'],
       ['Detail', 'Handbesetzte Perlen-Brosche in Gold'],
