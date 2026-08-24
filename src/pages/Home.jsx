@@ -1,76 +1,50 @@
 import { asset } from '../lib/asset.js'
-import { useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { motion, useScroll, useTransform } from 'framer-motion'
 import { products } from '../lib/products.js'
 import { Reveal, RevealLines } from '../components/Reveal.jsx'
-import Marquee from '../components/Marquee.jsx'
 import ProductCard from '../components/ProductCard.jsx'
 import Parallax, { ParallaxImage } from '../components/Parallax.jsx'
 
 function Hero() {
-  const ref = useRef(null)
-  const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
-  const y1 = useTransform(scrollYProgress, [0, 1], [0, -180])
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, 140])
-  const y3 = useTransform(scrollYProgress, [0, 1], [0, -90])
-  const wordY = useTransform(scrollYProgress, [0, 1], [0, 260])
-  const fade = useTransform(scrollYProgress, [0, 0.8], [1, 0])
-
   return (
-    <section className="hero" ref={ref}>
-      <motion.div className="hero-bg-word" style={{ y: wordY }}>
-        honig
-      </motion.div>
-
-      <div className="hero-photos">
-        <motion.div className="hero-photo p1" style={{ y: y1 }}>
-          <img src={asset('/images/otto-portrait.png')} alt="Otto — handgehäkelte Tasche in Olivgrün" />
-        </motion.div>
-        <motion.div className="hero-photo p2" style={{ y: y2 }}>
-          <img src={asset('/images/milly-std.png')} alt="Milly — handgehäkelte Tasche in Honigbeige" />
-        </motion.div>
-        <motion.div className="hero-photo p3" style={{ y: y3 }}>
-          <img src={asset('/images/lucy-1.png')} alt="Lucy — handgehäkelte Tasche in Altrosé" />
-        </motion.div>
-      </div>
-
-      <div className="wrap hero-inner">
-        <motion.div style={{ opacity: fade }}>
+    <section className="hero">
+      <div className="hero-grid">
+        <div className="hero-copy">
           <Reveal immediate>
-            <div className="eyebrow">Handgemachte Taschen aus Berlin</div>
+            <div className="hero-kicker">
+              <span className="rule" />
+              Handgemacht · Berlin-Zehlendorf · seit 2024
+            </div>
           </Reveal>
           <RevealLines
             immediate
             tag="h1"
-            className="display"
+            className="display hero-title"
             lines={[<>Von <span className="hero-honey-word">Hand</span>,</>, <>mit <span className="hero-accent-word">Liebe</span></>, 'gehäkelt']}
           />
-          <div className="hero-sub">
-            <Reveal delay={0.2} immediate>
-              <p className="lead">
-                Drei Taschen, unzählige Maschen. <strong>Milly</strong>, <strong>Otto</strong> &amp;{' '}
-                <strong>Lucy</strong> entstehen Masche für Masche in unserem kleinen Atelier in Zehlendorf —
-                jede ein Unikat.
-              </p>
-            </Reveal>
-            <Reveal delay={0.32} immediate>
-              <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-                <Link to="/shop" className="btn btn-fill btn-lg btn-arrow">
-                  Taschen entdecken
-                  <span className="btn-arrow">→</span>
-                </Link>
-                <Link to="/haekelkurs" className="btn btn-lg">
-                  Häkelkurs
-                </Link>
-              </div>
-            </Reveal>
-          </div>
+          <Reveal delay={0.18} immediate>
+            <p className="hero-lead">
+              Gehäkelte Taschen aus einem kleinen Atelier in Berlin-Zehlendorf.
+              Milly, Otto &amp; Lucy — drei Charaktere, jede von Hand, jede ein Unikat.
+            </p>
+          </Reveal>
+          <Reveal delay={0.28} immediate>
+            <div className="hero-actions">
+              <Link to="/shop" className="btn btn-fill btn-lg btn-arrow">
+                Taschen entdecken
+                <span className="btn-arrow">→</span>
+              </Link>
+              <Link to="/haekelkurs" className="hero-textlink">
+                Zum Häkelkurs →
+              </Link>
+            </div>
+          </Reveal>
+        </div>
 
-          <div className="hero-mobile-photo">
-            <img src={asset('/images/milly-2.jpg')} alt="Handgehäkelte Tasche von BellaHonigBerlin" />
-          </div>
-        </motion.div>
+        <figure className="hero-figure">
+          <img src={asset('/images/lucy-2.jpg')} alt="Frau mit einer handgehäkelten Tasche von BellaHonigBerlin" />
+          <figcaption className="hero-caption">Lucy · Altrosé</figcaption>
+        </figure>
       </div>
 
       <div className="hero-scroll">
@@ -85,10 +59,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-
-      <Marquee
-        items={['Handgemacht in Berlin', 'Milly · Otto · Lucy', 'Unikate aus recycelter Baumwolle', 'Häkelkurs alle 2 Wochen', 'Seit 2024']}
-      />
 
       {/* Intro / manifesto */}
       <section className="section-pad">
