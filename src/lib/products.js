@@ -46,6 +46,29 @@ export const products = [
     ],
     care: 'Handwäsche kalt, liegend trocknen. Kein Trockner, kein Bügeln über der Häkelstruktur.',
   },
+  {
+    slug: 'lucy',
+    name: 'Lucy',
+    tagline: 'Die Zarte',
+    color: 'Altrosé',
+    swatch: '#c88e8d',
+    price: 209,
+    tag: 'Neu',
+    tagStyle: 'rose',
+    short:
+      'Zart gehäkelte Hobo in Altrosé — mit einer Perlenbrosche in Gold als Herzstück. Verspielt, feminin, ein Liebling für Frühling und Sommer.',
+    story:
+      'Lucy ist die romantischste im Bunde. Aus weichem, altrosa Baumwollgarn in einer offenen Masche gehäkelt und veredelt mit einer handbesetzten Perlen-Brosche in Gold, die dem Beutel seinen Halt und seinen Charakter gibt. Klein, rund, verspielt — und wie alle unsere Taschen von Hand in Berlin gefertigt.',
+    images: ['/images/lucy-1.png', '/images/lucy-2.jpg', '/images/lucy-3.jpg'].map(asset),
+    details: [
+      ['Material', '100 % recycelte Baumwolle, altrosé'],
+      ['Detail', 'Handbesetzte Perlen-Brosche in Gold'],
+      ['Form', 'Runde Hobo-Tasche mit Schulterhenkel'],
+      ['Maße', 'ca. 38 × 42 cm'],
+      ['Herkunft', 'Von Hand gehäkelt in Berlin'],
+    ],
+    care: 'Handwäsche kalt, liegend trocknen. Brosche vor dem Waschen abnehmen.',
+  },
 ]
 
 export const getProduct = (slug) => products.find((p) => p.slug === slug)

@@ -8,7 +8,7 @@ export default function ProductCard({ p }) {
   return (
     <article className="prod-card">
       <Link to={`/produkt/${p.slug}`} className="prod-media" aria-label={p.name}>
-        <span className={`prod-tag ${p.tagStyle === 'honey' ? 'honey' : ''}`}>{p.tag}</span>
+        <span className={`prod-tag ${p.tagStyle || ''}`}>{p.tag}</span>
         <img src={p.images[0]} alt={`${p.name} — handgehäkelte Tasche`} loading="lazy" />
         <div className="prod-quick">
           <span className="btn btn-fill" style={{ flex: 1, justifyContent: 'center' }}>

@@ -53,7 +53,7 @@ export default function Contact() {
         immediate
         tag="h1"
         className="display"
-        lines={['Schreib', <span className="italic" style={{ color: 'var(--magenta)' }}>uns</span>]}
+        lines={['Schreib', <span className="italic" style={{ color: 'var(--honey)' }}>uns</span>]}
       />
       <Reveal delay={0.12} immediate>
         <p className="lead" style={{ maxWidth: '48ch', marginTop: 18 }}>

@@ -31,7 +31,7 @@ function Hero() {
           <img src={asset('/images/milly-std.png')} alt="Milly — handgehäkelte Tasche in Honigbeige" />
         </motion.div>
         <motion.div className="hero-photo p3" style={{ y: y3 }}>
-          <img src={asset('/images/milly-hang.png')} alt="Milly — handgehäkelte Tasche in Honigbeige" />
+          <img src={asset('/images/lucy-1.png')} alt="Lucy — handgehäkelte Tasche in Altrosé" />
         </motion.div>
       </div>
 
@@ -49,8 +49,9 @@ function Hero() {
           <div className="hero-sub">
             <Reveal delay={0.2} immediate>
               <p className="lead">
-                Zwei Taschen, unzählige Maschen. <strong>Milly</strong> &amp; <strong>Otto</strong> entstehen
-                Masche für Masche in unserem kleinen Atelier in Neukölln — jede ein Unikat.
+                Drei Taschen, unzählige Maschen. <strong>Milly</strong>, <strong>Otto</strong> &amp;{' '}
+                <strong>Lucy</strong> entstehen Masche für Masche in unserem kleinen Atelier in Neukölln —
+                jede ein Unikat.
               </p>
             </Reveal>
             <Reveal delay={0.32} immediate>
@@ -86,7 +87,7 @@ export default function Home() {
       <Hero />
 
       <Marquee
-        items={['Handgemacht in Berlin', 'Milly & Otto', 'Unikate aus recycelter Baumwolle', 'Häkelkurs alle 2 Wochen', 'Seit 2024']}
+        items={['Handgemacht in Berlin', 'Milly · Otto · Lucy', 'Unikate aus recycelter Baumwolle', 'Häkelkurs alle 2 Wochen', 'Seit 2024']}
       />
 
       {/* Intro / manifesto */}
@@ -97,7 +98,7 @@ export default function Home() {
             <RevealLines
               tag="h2"
               className="h-xl"
-              lines={['Süß im Namen,', <>ernst im <span className="italic" style={{ color: 'var(--magenta)' }}>Handwerk</span>.</>]}
+              lines={['Süß im Namen,', <>ernst im <span className="italic" style={{ color: 'var(--honey)' }}>Handwerk</span>.</>]}
             />
             <Reveal delay={0.1}>
               <p className="lead" style={{ marginTop: 26 }}>
@@ -109,7 +110,7 @@ export default function Home() {
             <Reveal delay={0.18}>
               <div className="stats" style={{ marginTop: 40 }}>
                 <div className="stat"><div className="n"><em>100</em>%</div><div className="l">Handarbeit</div></div>
-                <div className="stat"><div className="n">2</div><div className="l">Farben: Milly & Otto</div></div>
+                <div className="stat"><div className="n">3</div><div className="l">Modelle: Milly · Otto · Lucy</div></div>
                 <div className="stat"><div className="n"><em>1</em>/1</div><div className="l">Jedes Stück ein Unikat</div></div>
               </div>
             </Reveal>
@@ -129,7 +130,7 @@ export default function Home() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 20, marginBottom: 54 }}>
             <div>
               <Reveal><div className="eyebrow">Die Kollektion</div></Reveal>
-              <RevealLines tag="h2" className="h-xl" lines={['Zwei Charaktere,', 'eine Handschrift.']} />
+              <RevealLines tag="h2" className="h-xl" lines={['Drei Charaktere,', 'eine Handschrift.']} />
             </div>
             <Reveal delay={0.1}>
               <Link to="/shop" className="link-underline" style={{ paddingBottom: 8 }}>Alle ansehen →</Link>

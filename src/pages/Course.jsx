@@ -102,7 +102,7 @@ export default function Course() {
                     className={`date-card ${d.spots === 0 ? 'full' : d.spots <= 5 ? 'low' : ''}`}
                     disabled={d.spots === 0}
                     onClick={() => setForm((f) => ({ ...f, date: d.date }))}
-                    style={{ textAlign: 'left', cursor: d.spots === 0 ? 'default' : 'pointer', width: '100%', outline: form.date === d.date ? '2px solid var(--magenta)' : 'none' }}
+                    style={{ textAlign: 'left', cursor: d.spots === 0 ? 'default' : 'pointer', width: '100%', outline: form.date === d.date ? '2px solid var(--honey)' : 'none' }}
                   >
                     <span className="d">{d.date}</span>
                     <span className="loc">{d.location}</span>

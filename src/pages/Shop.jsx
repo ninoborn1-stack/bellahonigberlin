@@ -14,11 +14,11 @@ export default function Shop() {
           <div className="breadcrumb"><Link to="/">Start</Link> · Shop</div>
         </Reveal>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 24, marginTop: 20 }}>
-          <RevealLines immediate tag="h1" className="display" lines={['Der', <span className="italic" style={{ color: 'var(--magenta)' }}>Shop</span>]} />
+          <RevealLines immediate tag="h1" className="display" lines={['Der', <span className="italic" style={{ color: 'var(--honey)' }}>Shop</span>]} />
           <Reveal delay={0.15} immediate>
             <p className="lead" style={{ maxWidth: '38ch' }}>
-              Aktuell führen wir eine Taschenform in zwei Handschriften. Klein, aber jede von Hand — und jede
-              anders. Neue Farben kommen mit den Jahreszeiten.
+              Aktuell führen wir drei Handschriften — Milly, Otto und Lucy. Klein, aber jede von Hand — und
+              jede anders. Neue Farben kommen mit den Jahreszeiten.
             </p>
           </Reveal>
         </div>

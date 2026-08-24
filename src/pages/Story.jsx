@@ -13,7 +13,7 @@ export default function Story() {
           immediate
           tag="h1"
           className="display"
-          lines={['Eine', <>Handvoll <span className="italic" style={{ color: 'var(--magenta)' }}>Honig</span></>]}
+          lines={['Eine', <>Handvoll <span className="italic" style={{ color: 'var(--honey)' }}>Honig</span></>]}
         />
         <Reveal delay={0.15} immediate>
           <p className="lead" style={{ maxWidth: '52ch', marginTop: 20 }}>
@@ -79,7 +79,7 @@ export default function Story() {
             ].map(([h, p], i) => (
               <Reveal key={h} delay={i * 0.05}>
                 <div style={{ display: 'grid', gridTemplateColumns: '80px 1fr', gap: 24, padding: '28px 0', borderTop: '1px solid var(--line)', alignItems: 'baseline' }}>
-                  <span style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', color: 'var(--magenta)', fontSize: '1.3rem' }}>
+                  <span style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', color: 'var(--honey)', fontSize: '1.3rem' }}>
                     0{i + 1}
                   </span>
                   <div>
