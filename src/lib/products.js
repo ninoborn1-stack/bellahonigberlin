@@ -16,7 +16,7 @@ export const products = [
     story:
       'Milly ist unsere hellste Seele. In vielen Stunden aus einem weichen, recycelten Baumwollgarn gehäkelt, schwingt sie in einer runden Hobo-Form, die sich weich an die Schulter legt und viel fasst. Ihr warmer Beigeton schimmert wie Honig im Morgenlicht. Jede Masche wird in unserem Atelier in Berlin-Zehlendorf von Hand gesetzt.',
     edition: 15,
-    images: ['/images/p-milly-front.jpg', '/images/ed-milly.jpg', '/images/p-milly-side.jpg'].map(asset),
+    images: ['/images/p-milly-front.jpg', '/images/p-milly-side.jpg', '/images/tex-beige.jpg'].map(asset),
     details: [
       ['Auflage', 'Limitiert auf 15 Stück — jede von Hand, jede ein Unikat'],
       ['Material', '100 % recycelte Baumwolle, naturbeige & honigwarm'],
@@ -64,7 +64,7 @@ export const products = [
     story:
       'Lucy ist die romantischste im Bunde. Aus weichem, altrosa Baumwollgarn in einer offenen Masche gehäkelt und veredelt mit einer handbesetzten Perlen-Brosche in Gold, die dem Beutel seinen Halt und seinen Charakter gibt. Klein, rund, verspielt — und wie alle unsere Taschen von Hand in Berlin gefertigt.',
     edition: 15,
-    images: ['/images/p-lucy-front.jpg', '/images/ed-lucy.jpg', '/images/p-lucy-detail.jpg'].map(asset),
+    images: ['/images/p-lucy-front.jpg', '/images/p-lucy-side.jpg', '/images/p-lucy-detail.jpg'].map(asset),
     details: [
       ['Auflage', 'Limitiert auf 15 Stück — jede von Hand, jede ein Unikat'],
       ['Material', '100 % recycelte Baumwolle, altrosé'],
