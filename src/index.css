@@ -213,15 +213,19 @@ section { position: relative; }
   z-index: 150;
   display: flex; align-items: center; justify-content: space-between;
   padding: 20px var(--gutter);
+  /* Persistent frosted bar so links stay legible over light AND dark hero halves */
+  background: rgba(236, 234, 229, 0.7);
+  backdrop-filter: blur(12px) saturate(1.15);
   transition: padding 0.4s var(--ease), background 0.4s var(--ease), box-shadow 0.4s var(--ease);
   mix-blend-mode: normal;
 }
 .nav.scrolled {
   padding: 12px var(--gutter);
-  background: rgba(236, 234, 229, 0.82);
-  backdrop-filter: blur(14px) saturate(1.2);
+  background: rgba(236, 234, 229, 0.86);
   box-shadow: 0 1px 0 var(--line);
 }
+/* Over the dark full-screen mobile menu the bar must stay clear (light text shows through) */
+.nav.menu-open { background: transparent; backdrop-filter: none; box-shadow: none; }
 .nav-brand {
   display: flex; align-items: center; gap: 12px;
   font-family: var(--sans);

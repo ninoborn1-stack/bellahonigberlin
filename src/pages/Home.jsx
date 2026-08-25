@@ -42,8 +42,8 @@ function Hero() {
         </div>
 
         <figure className="hero-figure">
-          <img src={asset('/images/lucy-2.jpg')} alt="Frau mit einer handgehäkelten Tasche von BellaHonigBerlin" />
-          <figcaption className="hero-caption">Lucy · Altrosé</figcaption>
+          <img src={asset('/images/hero-editorial.jpg')} alt="Model mit der handgehäkelten Tasche Milly von BellaHonigBerlin" />
+          <figcaption className="hero-caption">Milly · Honigbeige</figcaption>
         </figure>
       </div>
 
