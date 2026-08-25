@@ -28,7 +28,7 @@ export default function Story() {
       <section className="wrap" style={{ marginTop: 40 }}>
         <Reveal>
           <div style={{ position: 'relative', height: '62vh', minHeight: 380, borderRadius: 'var(--radius)', overflow: 'hidden' }}>
-            <ParallaxImage src={asset('/images/ed-milly.jpg')} alt="Berlin von oben" amount={80} />
+            <ParallaxImage src={asset('/images/ed-strip-beige.jpg')} alt="Editorial-Reihe — Milly von BellaHonigBerlin" amount={80} />
           </div>
         </Reveal>
       </section>

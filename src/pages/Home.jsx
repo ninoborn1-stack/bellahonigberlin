@@ -118,7 +118,7 @@ export default function Home() {
 
       {/* Full-bleed honey banner */}
       <section style={{ position: 'relative', height: '78vh', minHeight: 480, overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
-        <ParallaxImage src={asset('/images/ed-strip-beige.jpg')} alt="Editorial — Milly von BellaHonigBerlin" amount={90} />
+        <ParallaxImage src={asset('/images/ed-milly.jpg')} alt="Editorial — Milly von BellaHonigBerlin" amount={90} />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(90deg, rgba(22,35,47,0.72), rgba(22,35,47,0.25))' }} />
         <div className="wrap" style={{ position: 'relative', color: 'var(--paper)' }}>
           <Reveal><div className="eyebrow honey" style={{ color: 'var(--honey-glow)' }}>Warum Honig?</div></Reveal>
