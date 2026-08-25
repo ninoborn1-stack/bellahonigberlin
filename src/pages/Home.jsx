@@ -8,49 +8,46 @@ import Parallax, { ParallaxImage } from '../components/Parallax.jsx'
 function Hero() {
   return (
     <section className="hero">
-      <div className="hero-grid">
-        <div className="hero-copy">
-          <Reveal immediate>
-            <div className="hero-kicker">
-              <span className="rule" />
-              Handgemacht · Berlin-Zehlendorf · seit 2024
-            </div>
-          </Reveal>
-          <RevealLines
-            immediate
-            tag="h1"
-            className="display hero-title"
-            lines={[<>Von <span className="hero-honey-word">Hand</span>,</>, <>mit <span className="hero-accent-word">Liebe</span></>, 'gehäkelt']}
-          />
-          <Reveal delay={0.18} immediate>
-            <p className="hero-lead">
-              Gehäkelte Taschen aus einem kleinen Atelier in Berlin-Zehlendorf.
-              Milly, Otto &amp; Lucy — drei Charaktere, jede von Hand, jede ein Unikat.
-            </p>
-          </Reveal>
-          <Reveal delay={0.28} immediate>
-            <div className="hero-actions">
-              <Link to="/shop" className="btn btn-fill btn-lg btn-arrow">
-                Taschen entdecken
-                <span className="btn-arrow">→</span>
-              </Link>
-              <Link to="/haekelkurs" className="hero-textlink">
-                Zum Häkelkurs →
-              </Link>
-            </div>
-          </Reveal>
-        </div>
+      <picture className="hero-bg">
+        <source media="(max-width: 760px)" srcSet={asset('/images/hero-editorial.jpg')} />
+        <img src={asset('/images/hero-full.jpg')} alt="Model mit der handgehäkelten Tasche Milly von BellaHonigBerlin" />
+      </picture>
+      <div className="hero-scrim" />
 
-        <figure className="hero-figure">
-          <img src={asset('/images/hero-editorial.jpg')} alt="Model mit der handgehäkelten Tasche Milly von BellaHonigBerlin" />
-          <figcaption className="hero-caption">Milly · Honigbeige</figcaption>
-        </figure>
+      <div className="hero-content">
+        <Reveal immediate>
+          <div className="hero-kicker">
+            <span className="rule" />
+            Handgemacht · Berlin-Zehlendorf · seit 2024
+          </div>
+        </Reveal>
+        <RevealLines
+          immediate
+          tag="h1"
+          className="display hero-title"
+          lines={[<>Von <span className="hero-honey-word">Hand</span>,</>, <>mit <span className="hero-accent-word">Liebe</span></>, 'gehäkelt']}
+        />
+        <Reveal delay={0.18} immediate>
+          <p className="hero-lead">
+            Gehäkelte Taschen aus einem kleinen Atelier in Berlin-Zehlendorf —
+            Milly, Otto &amp; Lucy. Jede von Hand, jede ein Unikat.
+          </p>
+        </Reveal>
+        <Reveal delay={0.28} immediate>
+          <div className="hero-actions">
+            <Link to="/shop" className="btn btn-fill btn-lg btn-arrow">
+              Taschen entdecken
+              <span className="btn-arrow">→</span>
+            </Link>
+            <Link to="/haekelkurs" className="hero-textlink">
+              Zum Häkelkurs →
+            </Link>
+          </div>
+        </Reveal>
       </div>
 
-      <div className="hero-scroll">
-        <span>Scroll</span>
-        <span className="line" />
-      </div>
+      <div className="hero-caption">Milly · Honigbeige</div>
+      <div className="hero-scroll"><span>Scroll</span><span className="line" /></div>
     </section>
   )
 }

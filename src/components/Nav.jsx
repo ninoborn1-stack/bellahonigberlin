@@ -1,6 +1,6 @@
 import { asset } from '../lib/asset.js'
 import { useEffect, useState } from 'react'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useCart } from '../context/CartContext.jsx'
 
@@ -15,6 +15,9 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [menu, setMenu] = useState(false)
   const { count, setOpen } = useCart()
+  const { pathname } = useLocation()
+  // On the home page the nav floats over the dark full-bleed hero → light text.
+  const overHero = pathname === '/' && !scrolled && !menu
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -29,7 +32,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className={`nav ${scrolled ? 'scrolled' : ''} ${menu ? 'menu-open' : ''}`}>
+      <nav className={`nav ${scrolled ? 'scrolled' : ''} ${menu ? 'menu-open' : ''} ${overHero ? 'over-hero' : ''}`}>
         <Link to="/" className="nav-brand" onClick={() => setMenu(false)}>
           <img className="mark" src={asset('/brand/mark.png')} alt="" />
           <b>
