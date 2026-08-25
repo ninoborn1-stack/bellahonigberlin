@@ -17,8 +17,8 @@ export default function Shop() {
           <RevealLines immediate tag="h1" className="display" lines={['Der', <span className="italic" style={{ color: 'var(--honey)' }}>Shop</span>]} />
           <Reveal delay={0.15} immediate>
             <p className="lead" style={{ maxWidth: '38ch' }}>
-              Aktuell führen wir drei Handschriften — Milly, Otto und Lucy. Klein, aber jede von Hand — und
-              jede anders. Neue Farben kommen mit den Jahreszeiten.
+              Drei Handschriften — Milly, Otto und Lucy. Jede von Hand gehäkelt, jede ein Unikat — und
+              in streng limitierter Auflage (15 bis 20 Stück je Farbe). Ist eine Serie vergriffen, ist sie vergriffen.
             </p>
           </Reveal>
         </div>
@@ -66,7 +66,7 @@ export default function Shop() {
           </div>
           <Parallax amount={50}>
             <div className="split-media tall">
-              <img src={asset('/images/yarn-honey.jpg')} alt="Garn in verschiedenen Farben" />
+              <img src={asset('/images/tex-rose.jpg')} alt="Garn in verschiedenen Farben" />
             </div>
           </Parallax>
         </div>

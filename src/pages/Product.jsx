@@ -56,6 +56,11 @@ export default function Product() {
             <div className="eyebrow">{p.tagline}</div>
             <h1 className="h-xl" style={{ margin: '10px 0 6px' }}>{p.name}</h1>
             <div style={{ fontFamily: 'var(--serif)', fontSize: '1.6rem' }}>{euro(p.price)}</div>
+            {p.edition && (
+              <div style={{ marginTop: 14 }}>
+                <span className="chip"><span className="dot" /> Limitierte Auflage · nur {p.edition} Stück</span>
+              </div>
+            )}
             <p className="lead" style={{ marginTop: 18 }}>{p.short}</p>
 
             <div style={{ fontWeight: 600, fontSize: '0.86rem', marginTop: 26 }}>
@@ -84,7 +89,7 @@ export default function Product() {
               </button>
             </div>
             <p className="form-note" style={{ marginTop: 14 }}>
-              ✦ Unikat — von Hand gehäkelt, kleine Abweichungen machen es besonders. Lieferzeit 1–2 Wochen.
+              ✦ Von Hand gehäkelt in streng limitierter Auflage — jedes Stück ein Unikat, kleine Abweichungen machen es besonders. Lieferzeit 1–2 Wochen.
             </p>
 
             <div className="pdp-meta">

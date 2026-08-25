@@ -28,7 +28,7 @@ export default function Story() {
       <section className="wrap" style={{ marginTop: 40 }}>
         <Reveal>
           <div style={{ position: 'relative', height: '62vh', minHeight: 380, borderRadius: 'var(--radius)', overflow: 'hidden' }}>
-            <ParallaxImage src={asset('/images/berlin2.jpg')} alt="Berlin von oben" amount={80} />
+            <ParallaxImage src={asset('/images/ed-milly.jpg')} alt="Berlin von oben" amount={80} />
           </div>
         </Reveal>
       </section>
@@ -58,7 +58,7 @@ export default function Story() {
           </div>
           <Parallax amount={50}>
             <div className="split-media tall">
-              <img src={asset('/images/yarn.jpg')} alt="Garnknäuel und Häkelnadeln" />
+              <img src={asset('/images/tex-olive.jpg')} alt="Garnknäuel und Häkelnadeln" />
             </div>
           </Parallax>
         </div>
