@@ -578,6 +578,16 @@ section { position: relative; }
 .field textarea { resize: vertical; min-height: 110px; }
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } }
+
+/* Contact page — info + form; stacks (form first) on mobile */
+.contact-grid {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: clamp(30px, 5vw, 70px); margin-top: 50px; align-items: start;
+}
+@media (max-width: 820px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .contact-grid > *:last-child { order: -1; }
+}
 .form-note { font-size: 0.82rem; color: var(--ink-faint); }
 .form-success {
   background: var(--honey-glow); border-radius: 0; padding: 22px 24px;

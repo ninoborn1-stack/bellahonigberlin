@@ -62,25 +62,25 @@ export default function Contact() {
         </p>
       </Reveal>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1.2fr)', gap: 'clamp(30px,5vw,70px)', marginTop: 50, alignItems: 'start' }}>
+      <div className="contact-grid">
         {/* left info */}
         <div>
           <Reveal>
             <div style={{ display: 'grid', gap: 26 }}>
               <div>
-                <div className="eyebrow ink" style={{ marginBottom: 8 }}>Atelier</div>
+                <div className="eyebrow ink" style={{ display: 'flex', marginBottom: 8 }}>Atelier</div>
                 <p style={{ margin: 0 }}>Teltower Damm 00<br />14163 Berlin-Zehlendorf</p>
               </div>
               <div>
-                <div className="eyebrow ink" style={{ marginBottom: 8 }}>E-Mail</div>
+                <div className="eyebrow ink" style={{ display: 'flex', marginBottom: 8 }}>E-Mail</div>
                 <a className="link-underline" href="mailto:hallo@bellahonigberlin.de">hallo@bellahonigberlin.de</a>
               </div>
               <div>
-                <div className="eyebrow ink" style={{ marginBottom: 8 }}>Sozial</div>
+                <div className="eyebrow ink" style={{ display: 'flex', marginBottom: 8 }}>Sozial</div>
                 <a className="link-underline" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram ↗</a>
               </div>
               <div>
-                <div className="eyebrow ink" style={{ marginBottom: 8 }}>Atelier-Zeiten</div>
+                <div className="eyebrow ink" style={{ display: 'flex', marginBottom: 8 }}>Atelier-Zeiten</div>
                 <p style={{ margin: 0 }}>Nach Vereinbarung &amp; an Kurstagen.<br />Komm gern zum Häkelkurs vorbei.</p>
               </div>
             </div>
