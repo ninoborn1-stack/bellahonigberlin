@@ -47,40 +47,7 @@ export default function Home() {
     <>
       <Hero />
 
-      {/* Intro / manifesto */}
-      <section className="section-pad">
-        <div className="wrap split">
-          <div>
-            <Reveal><div className="eyebrow honey">Die Idee</div></Reveal>
-            <RevealLines
-              tag="h2"
-              className="h-xl"
-              lines={['Süß im Namen,', <>ernst im <span className="italic" style={{ color: 'var(--honey)' }}>Handwerk</span>.</>]}
-            />
-            <Reveal delay={0.1}>
-              <p className="lead" style={{ marginTop: 26 }}>
-                BellaHonigBerlin ist keine Fabrik. Es ist ein Atelier, ein Korb voller Garn und viele stille
-                Abendstunden. Wir häkeln edle Taschen, die man weiterreicht statt wegwirft — langsam gemacht,
-                lange geliebt.
-              </p>
-            </Reveal>
-            <Reveal delay={0.18}>
-              <div className="stats" style={{ marginTop: 40 }}>
-                <div className="stat"><div className="n"><em>100</em>%</div><div className="l">Handarbeit</div></div>
-                <div className="stat"><div className="n">3</div><div className="l">Modelle: Milly · Otto · Lucy</div></div>
-                <div className="stat"><div className="n"><em>1</em>/1</div><div className="l">Jedes Stück ein Unikat</div></div>
-              </div>
-            </Reveal>
-          </div>
-          <Parallax amount={50}>
-            <div className="split-media tall">
-              <img src={asset('/images/tex-beige.jpg')} alt="Häkeltextur aus recycelter Baumwolle" />
-            </div>
-          </Parallax>
-        </div>
-      </section>
-
-      {/* Products */}
+      {/* Collection */}
       <section className="section-pad" style={{ background: 'var(--bg-deep)' }}>
         <div className="honeycomb-bg" style={{ opacity: 0.08 }} />
         <div className="wrap" style={{ position: 'relative' }}>
@@ -100,6 +67,39 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Idea / manifesto */}
+      <section className="section-pad">
+        <div className="wrap split">
+          <div>
+            <Reveal><div className="eyebrow honey">Die Idee</div></Reveal>
+            <RevealLines
+              tag="h2"
+              className="h-xl"
+              lines={['Süß im Namen,', <>ernst im <span className="italic" style={{ color: 'var(--honey)' }}>Handwerk</span>.</>]}
+            />
+            <Reveal delay={0.1}>
+              <p className="lead" style={{ marginTop: 26 }}>
+                BellaHonigBerlin ist keine Fabrik, sondern ein Atelier in Berlin-Zehlendorf — ein Korb voller
+                recycelter Baumwolle und viele stille Abendstunden. Wir häkeln Taschen, die man weitergibt statt
+                wegwirft: langsam gemacht, lange geliebt.
+              </p>
+            </Reveal>
+            <Reveal delay={0.18}>
+              <div className="stats">
+                <div className="stat"><div className="n"><em>100</em>%</div><div className="l">Handarbeit</div></div>
+                <div className="stat"><div className="n">3</div><div className="l">Modelle</div></div>
+                <div className="stat"><div className="n"><em>1</em>/1</div><div className="l">Unikat</div></div>
+              </div>
+            </Reveal>
+          </div>
+          <Parallax amount={50}>
+            <div className="split-media tall">
+              <img src={asset('/images/tex-beige.jpg')} alt="Häkeltextur aus recycelter Baumwolle" />
+            </div>
+          </Parallax>
         </div>
       </section>
 

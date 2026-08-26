@@ -518,10 +518,15 @@ section { position: relative; }
 @media (max-width: 780px) { .pillars { grid-template-columns: 1fr; } }
 
 /* stat row */
-.stats { display: flex; flex-wrap: wrap; gap: clamp(30px,6vw,90px); }
-.stat .n { font-family: var(--serif); font-size: clamp(2.6rem, 5vw, 4.2rem); line-height: 1; }
+.stats {
+  display: grid; grid-template-columns: repeat(3, auto); justify-content: start;
+  margin-top: 46px; border-top: 1px solid var(--line);
+}
+.stat { padding-top: 22px; padding-right: clamp(18px, 3.5vw, 52px); }
+.stat + .stat { padding-left: clamp(18px, 3.5vw, 52px); border-left: 1px solid var(--line); }
+.stat .n { font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1; letter-spacing: -0.01em; }
 .stat .n em { color: var(--honey); font-style: italic; }
-.stat .l { color: var(--ink-faint); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 8px; }
+.stat .l { color: var(--ink-faint); font-weight: 600; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; margin-top: 12px; white-space: nowrap; }
 
 /* ============================================================
    COURSE (Häkelkurs)
