@@ -58,7 +58,7 @@ export default function Story() {
           </div>
           <Parallax amount={50}>
             <div className="split-media tall">
-              <img src={asset('/images/tex-olive.jpg')} alt="Garnknäuel und Häkelnadeln" />
+              <img src={asset('/images/p-lucy-side.jpg')} alt="Lucy — handgehäkelte Tasche in Altrosé" />
             </div>
           </Parallax>
         </div>
