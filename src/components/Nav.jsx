@@ -33,36 +33,38 @@ export default function Nav() {
   return (
     <>
       <nav className={`nav ${scrolled ? 'scrolled' : ''} ${menu ? 'menu-open' : ''} ${overHero ? 'over-hero' : ''}`}>
-        <Link to="/" className="nav-brand" onClick={() => setMenu(false)}>
-          <img className="mark" src={asset('/brand/mark.png')} alt="" />
-          <b>
-            Bella<span>Honig</span>Berlin
-          </b>
-        </Link>
+        <div className="nav-inner">
+          <Link to="/" className="nav-brand" onClick={() => setMenu(false)}>
+            <img className="mark" src={asset('/brand/mark.png')} alt="" />
+            <b>
+              Bella<span>Honig</span>Berlin
+            </b>
+          </Link>
 
-        <div className="nav-links">
-          {links.map((l) => (
-            <NavLink key={l.to} to={l.to} className={({ isActive }) => (isActive ? 'active' : '')}>
-              {l.label}
-            </NavLink>
-          ))}
-        </div>
+          <div className="nav-links">
+            {links.map((l) => (
+              <NavLink key={l.to} to={l.to} className={({ isActive }) => (isActive ? 'active' : '')}>
+                {l.label}
+              </NavLink>
+            ))}
+          </div>
 
-        <div className="nav-right">
-          <button className="cart-btn" onClick={() => setOpen(true)} aria-label="Warenkorb öffnen">
-            Tasche
-            {count > 0 && <span className="cart-count">{count}</span>}
-          </button>
-          <button
-            className="nav-burger"
-            onClick={() => setMenu((m) => !m)}
-            aria-label="Menü"
-            style={{ display: undefined }}
-          >
-            <span style={{ transform: menu ? 'translateY(7px) rotate(45deg)' : '' }} />
-            <span style={{ opacity: menu ? 0 : 1 }} />
-            <span style={{ transform: menu ? 'translateY(-7px) rotate(-45deg)' : '' }} />
-          </button>
+          <div className="nav-right">
+            <button className="cart-btn" onClick={() => setOpen(true)} aria-label="Warenkorb öffnen">
+              Tasche
+              {count > 0 && <span className="cart-count">{count}</span>}
+            </button>
+            <button
+              className="nav-burger"
+              onClick={() => setMenu((m) => !m)}
+              aria-label="Menü"
+              style={{ display: undefined }}
+            >
+              <span style={{ transform: menu ? 'translateY(7px) rotate(45deg)' : '' }} />
+              <span style={{ opacity: menu ? 0 : 1 }} />
+              <span style={{ transform: menu ? 'translateY(-7px) rotate(-45deg)' : '' }} />
+            </button>
+          </div>
         </div>
       </nav>
 
