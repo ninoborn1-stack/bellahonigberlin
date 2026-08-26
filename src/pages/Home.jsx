@@ -34,13 +34,6 @@ function Hero() {
             </div>
           </Reveal>
         </div>
-
-        <Reveal delay={0.32} immediate className="hero-right">
-          <p className="hero-sub">
-            Gehäkelte Taschen aus einem kleinen Atelier in Berlin-Zehlendorf — Milly, Otto &amp; Lucy.
-            Jede von Hand, jede ein Unikat.
-          </p>
-        </Reveal>
       </div>
 
       <div className="hero-caption">Milly · Honigbeige</div>
