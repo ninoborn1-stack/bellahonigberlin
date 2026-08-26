@@ -277,6 +277,13 @@ section { position: relative; }
   }
   .nav-burger span { width: 24px; height: 2px; background: var(--ink); border-radius: 2px; transition: 0.3s; }
 }
+@media (max-width: 560px) {
+  .nav-brand b { font-size: 1.5rem; }
+  .nav-brand .mark { width: 34px; height: 34px; }
+  .nav-brand { gap: 9px; }
+  .nav-right { gap: 14px; }
+  .cart-btn { font-size: 0.66rem; letter-spacing: 0.1em; }
+}
 
 .mobile-menu {
   position: fixed; inset: 0; z-index: 140;
