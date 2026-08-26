@@ -37,7 +37,7 @@ export default function CartDrawer() {
               <div className="cart-empty">
                 <img className="mark" src={asset('/brand/mark.png')} alt="" />
                 <p>Noch ganz leicht — hier wartet noch keine Tasche.</p>
-                <Link className="btn btn-magenta btn-fill" to="/shop" onClick={() => setOpen(false)} style={{ marginTop: 12 }}>
+                <Link className="btn btn-fill" to="/shop" onClick={() => setOpen(false)} style={{ marginTop: 12 }}>
                   Zum Shop
                 </Link>
               </div>

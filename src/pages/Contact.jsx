@@ -111,7 +111,7 @@ export default function Contact() {
                 <div className="eyebrow honey" style={{ marginBottom: 14 }}>{topics[form.topic].eyebrow}</div>
 
                 {form.topic === 'bestellung' && (
-                  <div style={{ background: 'var(--paper-2)', border: '1px solid var(--line)', borderRadius: 12, padding: 16, marginBottom: 20 }}>
+                  <div style={{ background: 'var(--paper-2)', border: '1px solid var(--line)', padding: 16, marginBottom: 20 }}>
                     <b style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem', letterSpacing: '0.04em' }}>Dein Warenkorb</b>
                     {lines.length === 0 ? (
                       <p style={{ margin: '8px 0 0', color: 'var(--ink-faint)' }}>
@@ -155,7 +155,7 @@ export default function Contact() {
                   <label htmlFor="cmessage">Nachricht</label>
                   <textarea id="cmessage" required value={form.message} onChange={set('message')} placeholder="Erzähl uns, worum es geht …" />
                 </div>
-                <button type="submit" className="btn btn-magenta btn-fill btn-lg" style={{ width: '100%', justifyContent: 'center' }}>
+                <button type="submit" className="btn btn-fill btn-lg" style={{ width: '100%', justifyContent: 'center' }}>
                   Nachricht senden →
                 </button>
                 <p className="form-note" style={{ marginTop: 12 }}>

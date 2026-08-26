@@ -187,7 +187,7 @@ export default function Course() {
                   <label htmlFor="message">Nachricht (optional)</label>
                   <textarea id="message" value={form.message} onChange={set('message')} placeholder="Allergien, Wünsche, Fragen …" />
                 </div>
-                <button type="submit" className="btn btn-magenta btn-fill btn-lg" style={{ width: '100%', justifyContent: 'center' }}>
+                <button type="submit" className="btn btn-fill btn-lg" style={{ width: '100%', justifyContent: 'center' }}>
                   Anfrage senden →
                 </button>
                 <p className="form-note" style={{ marginTop: 12 }}>

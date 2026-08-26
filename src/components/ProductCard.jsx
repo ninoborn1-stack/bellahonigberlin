@@ -15,7 +15,7 @@ export default function ProductCard({ p }) {
             Ansehen
           </span>
           <button
-            className="btn btn-magenta btn-fill"
+            className="btn btn-fill"
             onClick={(e) => {
               e.preventDefault()
               add({ slug: p.slug, name: p.name, variant: p.color, price: p.price, image: p.images[0], qty: 1 })

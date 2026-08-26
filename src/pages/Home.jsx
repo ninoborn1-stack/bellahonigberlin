@@ -159,7 +159,7 @@ export default function Home() {
               </p>
             </Reveal>
             <Reveal delay={0.2}>
-              <Link to="/haekelkurs" className="btn btn-magenta btn-fill btn-lg" style={{ marginTop: 28 }}>
+              <Link to="/haekelkurs" className="btn btn-fill btn-lg" style={{ marginTop: 28 }}>
                 Platz anfragen →
               </Link>
             </Reveal>

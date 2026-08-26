@@ -59,7 +59,7 @@ export default function Shop() {
               </p>
             </Reveal>
             <Reveal delay={0.16}>
-              <Link to="/kontakt?anfrage=sonderfarbe" className="btn btn-magenta btn-fill btn-lg" style={{ marginTop: 26 }}>
+              <Link to="/kontakt?anfrage=sonderfarbe" className="btn btn-fill btn-lg" style={{ marginTop: 26 }}>
                 Wunschfarbe anfragen →
               </Link>
             </Reveal>

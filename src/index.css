@@ -116,7 +116,7 @@ h1, h2, h3, h4 {
 .wrap { max-width: var(--wrap); margin: 0 auto; padding-inline: var(--gutter); }
 .wrap-wide { max-width: var(--wrap); margin: 0 auto; padding-inline: var(--gutter); }
 section { position: relative; }
-.section-pad { padding-block: clamp(80px, 12vw, 180px); }
+.section-pad { padding-block: clamp(96px, 13vw, 200px); }
 
 /* ---------- buttons ---------- */
 .btn {
@@ -275,7 +275,7 @@ section { position: relative; }
     display: inline-flex; flex-direction: column; gap: 5px;
     background: none; border: none; padding: 6px;
   }
-  .nav-burger span { width: 24px; height: 2px; background: var(--ink); border-radius: 2px; transition: 0.3s; }
+  .nav-burger span { width: 24px; height: 2px; background: var(--ink); border-radius: 0; transition: 0.3s; }
 }
 @media (max-width: 560px) {
   .nav-brand b { font-size: 1.5rem; }
