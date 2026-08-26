@@ -15,34 +15,31 @@ function Hero() {
       <div className="hero-scrim" />
 
       <div className="hero-content">
-        <Reveal immediate>
-          <div className="hero-kicker">
-            <span className="rule" />
-            Handgemacht · Berlin-Zehlendorf · seit 2024
-          </div>
-        </Reveal>
-        <RevealLines
-          immediate
-          tag="h1"
-          className="display hero-title"
-          lines={[<>Von <span className="hero-honey-word">Hand</span>,</>, <>mit <span className="hero-accent-word">Liebe</span></>, 'gehäkelt']}
-        />
-        <Reveal delay={0.18} immediate>
-          <p className="hero-lead">
-            Gehäkelte Taschen aus einem kleinen Atelier in Berlin-Zehlendorf —
-            Milly, Otto &amp; Lucy. Jede von Hand, jede ein Unikat.
+        <div className="hero-left">
+          <RevealLines
+            immediate
+            tag="h1"
+            className="display hero-title"
+            lines={[<>Von <span className="hero-honey-word">Hand</span>,</>, <>mit <span className="hero-accent-word">Liebe</span></>, 'gehäkelt']}
+          />
+          <Reveal delay={0.2} immediate>
+            <div className="hero-actions">
+              <Link to="/shop" className="btn btn-fill btn-lg btn-arrow">
+                Taschen entdecken
+                <span className="btn-arrow">→</span>
+              </Link>
+              <Link to="/haekelkurs" className="hero-textlink">
+                Zum Häkelkurs →
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+
+        <Reveal delay={0.32} immediate className="hero-right">
+          <p className="hero-sub">
+            Gehäkelte Taschen aus einem kleinen Atelier in Berlin-Zehlendorf — Milly, Otto &amp; Lucy.
+            Jede von Hand, jede ein Unikat.
           </p>
-        </Reveal>
-        <Reveal delay={0.28} immediate>
-          <div className="hero-actions">
-            <Link to="/shop" className="btn btn-fill btn-lg btn-arrow">
-              Taschen entdecken
-              <span className="btn-arrow">→</span>
-            </Link>
-            <Link to="/haekelkurs" className="hero-textlink">
-              Zum Häkelkurs →
-            </Link>
-          </div>
         </Reveal>
       </div>
 
