@@ -612,7 +612,7 @@ section { position: relative; }
    ============================================================ */
 .footer { background: var(--ink); color: #cfd7dd; padding-top: clamp(70px, 9vw, 130px); position: relative; overflow: hidden; }
 .footer a:hover { color: #fff; }
-.footer-big { font-family: var(--serif); font-size: clamp(3rem, 12vw, 11rem); line-height: 0.9; color: var(--paper); letter-spacing: -0.02em; }
+.footer-big { font-family: var(--serif); font-size: clamp(2.6rem, 12vw, 11rem); line-height: 0.92; color: var(--paper); letter-spacing: -0.02em; }
 .footer-big em { font-style: italic; color: var(--honey-glow); }
 .footer-cols { display: grid; grid-template-columns: 2fr 1fr 1fr 1.4fr; gap: 40px; padding-block: clamp(40px, 6vw, 80px); border-top: 1px solid rgba(255,255,255,0.12); margin-top: clamp(40px,6vw,70px); }
 .footer-cols h5 { font-family: var(--sans); font-weight: 700; color: #fff; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 16px; }
@@ -622,7 +622,8 @@ section { position: relative; }
 .footer-news input { flex: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.16); border-radius: 0; padding: 12px 18px; color: #fff; font-family: var(--sans); }
 .footer-news input::placeholder { color: #7d8a94; }
 .footer-news button { border: none; background: var(--honey-glow); color: var(--ink); border-radius: 0; padding: 0 20px; font-weight: 700; font-family: var(--sans); }
-@media (max-width: 820px) { .footer-cols { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 820px) { .footer-cols { grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 34px 30px; } }
+@media (max-width: 560px) { .footer-cols { grid-template-columns: 1fr; gap: 32px; } }
 
 /* ============================================================
    REVEAL util (fallback when framer not driving)
